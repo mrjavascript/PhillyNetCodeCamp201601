@@ -1,0 +1,14 @@
+<h3>Here is a list of popular video games</h3>
+
+<ul>
+  {{#each games as |game|}}
+      <li>{{game}}</li>
+  {{/each}}
+</ul>
+
+<h4>Add Game</h4>
+{{input value=gameName}}
+<button {{action "addGame"}}>Add Game</button>
+
+<h4>Save Changes</h4>
+<button {{action "saveChanges"}}>Save Changes</button>
